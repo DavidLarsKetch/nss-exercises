@@ -16,8 +16,12 @@ header ul li {
   color: grey;
 }
 
-.active { 
+.active {
 color: yellow;
+}
+
+.parent div:nth-child(1) {
+  color: red;
 }
 
 a[class="disabled"] {
