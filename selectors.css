@@ -5,8 +5,17 @@ header ul {
   list-style: none;
   display: inline-block;
 }
+
 header ul li {
   display: inline;
   float: left;
   margin: 0 1rem;
+}
+
+.disabled {
+  color: grey;
+}
+
+a[class="disabled"] {
+  color: purple
 }
