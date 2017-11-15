@@ -24,6 +24,10 @@ color: yellow;
   color: red;
 }
 
+.parent div:nth-child(3) {
+  color: blue;
+}
+
 a[class="disabled"] {
   color: purple
 }
