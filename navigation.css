@@ -1,0 +1,26 @@
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color:inherit;
+}
+
+ul li {
+  list-style: none;
+  display: inline;
+  border: 1px solid pink;
+  padding: 5px;
+}
+
+.text:hover {
+  color: green;
+}
+
+.background:hover {
+  background: red;
+}
+
+.grow:active {
+  padding: 5px 10px;
+}
