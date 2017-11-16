@@ -20,6 +20,10 @@ header ul li {
   color: yellow;
 }
 
+.grandparent > h4 {
+  border: 1px solid teal;
+  border-radius: 5px;
+}
 .parent div:nth-child(1) {
   color: red;
 }
