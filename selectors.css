@@ -40,6 +40,11 @@ header ul li {
   background: blue;
 }
 
+.promo {
+  font-weight: bold;
+  color: gold;
+}
+
 a[class="disabled"] {
   color: purple
 }
