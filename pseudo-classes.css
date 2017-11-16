@@ -1,3 +1,9 @@
+span {
+  border: 1px solid black;
+  display: block;
+  margin: 25px;
+}
+
 .block {
   display: inline;
   list-style: none;
