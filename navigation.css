@@ -17,8 +17,8 @@ ul li {
   color: green;
 }
 
-.background {
-
+.background:hover {
+  background: red;
 }
 
 .grow {
