@@ -2,6 +2,10 @@ a {
   text-decoration: none;
 }
 
+a:visited {
+  color:inherit;
+}
+
 ul li {
   list-style: none;
   display: inline;
@@ -9,7 +13,7 @@ ul li {
   padding: 10px;
 }
 
-.text {
+.text:hover {
 
 }
 
