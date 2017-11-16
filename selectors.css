@@ -17,11 +17,15 @@ header ul li {
 }
 
 .active {
-color: yellow;
+  color: yellow;
 }
 
 .parent div:nth-child(1) {
   color: red;
+}
+
+.parent div:nth-child(1) + h4 {
+  background: red;
 }
 
 .parent div:nth-child(3) {
