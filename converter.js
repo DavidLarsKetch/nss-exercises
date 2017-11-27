@@ -13,7 +13,10 @@ function toCelsius () {
 }
 
 function toFahrenheit () {
-
+  let inTemp = tempInput.value;
+  let outTemp = Math.round(inTemp * (9 / 5) + 32);
+  tempOutput.innerHTML = outTemp + "&#176;" + "F";
+  colorize(outTemp, false);
 }
 
 // Get a reference to the button element in the DOM
