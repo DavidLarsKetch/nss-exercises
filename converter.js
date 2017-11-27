@@ -1,4 +1,10 @@
 function toCelsius () {
+const clearDisplay = document.getElementById("clearInput");
+const tempDisplay = document.getElementById("tempDisplay");
+const tempInput = document.getElementById("tempInput");
+const tempOutput = document.getElementById("tempOutput");
+const outputF = document.getElementById("outputF");
+const outputC = document.getElementById("outputC");
 
 }
 
