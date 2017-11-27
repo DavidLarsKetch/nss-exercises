@@ -33,6 +33,17 @@ function colorize (tempF, tempC) {
 // This function should determine which conversion should
 // happen based on which radio button is selected.
 function determineConverter (clickEvent) {
+  let checkF = clickEvent.originalTarget.form[1]["checked"];
+  let checkC = clickEvent.originalTarget.form[2]["checked"];
+  if (!tempInput.value) {
+    tempOutput.innerHTML = "Please input a value."
+  } else if (checkC) {
+    toCelsius();
+  } else if (checkF){
+    toFahrenheit();
+  } else {
+    tempOutput.innerHTML = "Please select a temperature to convert to."
+  }
 }
 
 // Assign a function to be executed when the button is clicked
