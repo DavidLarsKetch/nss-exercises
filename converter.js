@@ -47,3 +47,7 @@ function determineConverter (clickEvent) {
 }
 
 // Assign a function to be executed when the button is clicked
+tempDisplay.addEventListener("click", determineConverter);
+clearInput.addEventListener("click", () => {
+  tempInput.value = '';
+});
