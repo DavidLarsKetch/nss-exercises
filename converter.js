@@ -22,6 +22,17 @@ function toFahrenheit () {
 // Get a reference to the button element in the DOM
 var button = document.getElementById("converter");
 
+function colorize (tempF, tempC) {
+  let comparison = tempF ? tempF : tempC;
+  let comparor = tempF ? [32, 90] : tempC ? [0, 32] : false;
+  if (comparison < comparor[0]) {
+    tempOutput.style.color = "blue";
+  } else if (comparison > comparor[1]) {
+    tempOutput.style.color = "red";
+  } else {
+    tempOutput.style.color = "green";
+  }
+}
 // This function should determine which conversion should
 // happen based on which radio button is selected.
 function determineConverter (clickEvent) {
