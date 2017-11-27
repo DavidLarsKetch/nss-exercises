@@ -1,4 +1,3 @@
-function toCelsius () {
 const clearDisplay = document.getElementById("clearInput");
 const tempDisplay = document.getElementById("tempDisplay");
 const tempInput = document.getElementById("tempInput");
@@ -6,6 +5,11 @@ const tempOutput = document.getElementById("tempOutput");
 const outputF = document.getElementById("outputF");
 const outputC = document.getElementById("outputC");
 
+function toCelsius () {
+  let inTemp = tempInput.value;
+  let outTemp = Math.round((inTemp - 32) * (5 / 9));
+  tempOutput.innerHTML = outTemp + "&#176;" + "C";
+  colorize(false, outTemp);
 }
 
 function toFahrenheit () {
