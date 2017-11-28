@@ -1,2 +1,2 @@
 let sonnet = document.getElementById("sonnet").innerHTML;
-console.log(sonnet);
+console.log(sonnet.search("orphans"));
