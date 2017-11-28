@@ -5,3 +5,4 @@ sonnet = sonnet.replace("winter", "yuletide");
 console.log(sonnet);
 sonnet = sonnet.replace(/\sthe\s/gi, " a large ");
 console.log(sonnet);
+document.getElementById("sonnet").innerHTML = sonnet;
