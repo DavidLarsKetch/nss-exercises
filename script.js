@@ -1,8 +1,17 @@
 const CardMaker = {
-  makeFrontMessage: function(string) {
-    return `<h2>${string}</h2>`
+  makeCard: function() {
+  },
+  makeFrontMessage: function(cardElm) {
+  },
+  makeBodyMessage: function(cardElm) {
+  },
+  makeFooter: function(cardElm) {
+  },
+  assignID: function() {
+  },
+  addListener: function() {
   }
-}
+};
 
 //Refactor this to link this object to cardMaker
 const BirthdayCard = Object.create();
