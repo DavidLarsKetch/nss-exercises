@@ -82,3 +82,11 @@ BirthdayCard.bodyCopy = `It's your birthday, you crazy fool. I hope you celebrat
                         it in style & with wild abandon. May your next year be
                         crazier than the last.`;
 BirthdayCard.makeCard();
+
+const CondolencesCard = Object.create(CardMaker);
+CondolencesCard.titleString = "My Condolences";
+CondolencesCard.bodyCopy = `Please accept my deepest condolences on the passing
+                           of your loved one. I grieve with you over your loss.
+                           They will live on in my memory forever.`;
+CondolencesCard.makeCard();
+
