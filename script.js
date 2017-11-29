@@ -13,6 +13,17 @@ const CardMaker = {
     this.addListener();
   },
   makeFrontMessage: function(cardElm) {
+    const titleWrapper = document.createElement("div");
+    const titleElm = document.createElement("h2");
+    const titleNode = document.createTextNode(this.titleString);
+
+    titleWrapper.className = "titleWrapper"
+    titleElm.className = "titleElm";
+
+
+    cardElm.appendChild(titleWrapper);
+    titleWrapper.appendChild(titleElm);
+    titleElm.appendChild(titleNode);
   },
   makeBodyMessage: function(cardElm) {
   },
