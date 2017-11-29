@@ -19,3 +19,9 @@ function divide(num1, num2) {
   return num1 / num2;
 }
 
+function printClear(value) {
+  output.innerHTML = value;
+  input1.value = '';
+  input2.value = '';
+}
+
