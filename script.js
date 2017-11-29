@@ -59,6 +59,19 @@ const CardMaker = {
     return id;
   },
   addListener: function() {
+    let thisCard = document.getElementById(this.id);
+    thisCard.addEventListener("click", () => {
+      let title = thisCard.firstChild;
+      let content = title.nextSibling
+
+      if (title.style.display === "none") {
+        title.style.display = "block";
+        content.style.display = "none";
+      } else {
+        title.style.display = "none";
+        content.style.display = "block";
+      }
+    });
   }
 };
 
