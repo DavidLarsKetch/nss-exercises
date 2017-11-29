@@ -27,3 +27,8 @@ function captureHappyNums(end, idx) {
   return end;
 }
 
+for (let i = happyNums.length; i < 143; i = happyNums.length) {
+  captureHappyNums(num, i);
+}
+
+console.log("The 143 happy numbers below 1000 are:", happyNums);
