@@ -50,6 +50,13 @@ const CardMaker = {
     footerTextElm.appendChild(footerTextNode);
   },
   assignID: function() {
+    let id = "Z";
+    for (var i = 0; i < 5; i++) {
+      num = Math.round(Math.random()*9);
+      id += num.toString();
+    }
+    this.id = id;
+    return id;
   },
   addListener: function() {
   }
