@@ -13,3 +13,17 @@ function splitSquareAdd(workingNum) {
   return end;
 }
 
+function captureHappyNums(end, idx) {
+  for (let i = 0; i < 10; i++) {
+    end = splitSquareAdd(end);
+    if (end === 1) {
+      happyNums.push(num);
+      printToDOM.innerHTML += (idx + 1) + " -  " + num + "<br>";
+      num++;
+      return end;
+    }
+  }
+  num++;
+  return end;
+}
+
