@@ -1,0 +1,5 @@
+const buttons = document.getElementById("buttons");
+const input1 = document.getElementById("input1");
+const input2 = document.getElementById("input2");
+const output = document.getElementById("output");
+
