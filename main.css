@@ -1,20 +1,46 @@
 body {
+  box-sizing: border-box;
 }
 
 .bodyCopy {
+  font-size: 1.33rem;
+  line-height: 2rem;
+  padding: 0 15px;
 }
 
 .bodyWrapper {
+  display: none;
+  flex-grow: 2;
+  margin-top: 3rem;
 }
 
 .card {
+  align-items: center;
+  border: 1px solid black;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  height: 450px;
+  margin: 2vh;
+  padding: 10px;
+  width: 15vw;
 }
 
 .container {
+  display: flex;
+  margin: auto;
+  padding: 0;
+  width: 80%;
 }
 
 .footerWrapper{
+  border-top: 4px solid black;
+  text-align: center;
+  width: 100%;
 }
 
 .titleWrapper {
+  flex-grow: 99;
+  text-align: center;
+  width: 100%;
 }
