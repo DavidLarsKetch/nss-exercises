@@ -25,3 +25,24 @@ function printClear(value) {
   input2.value = '';
 }
 
+buttons.addEventListener("click", (event) => {
+  let targetFunc = event.target.id;
+  let result;
+  switch (targetFunc) {
+    case "add":
+      result = add(+input1.value, +input2.value);
+      break;
+    case "subtract":
+      result = subtract(+input1.value, +input2.value);
+      break;
+    case "multiply":
+      result = multiply(+input1.value, +input2.value);
+      break;
+    case "divide":
+      result = divide(+input1.value, +input2.value);
+      break;
+    default:
+      break;
+  }
+  printClear(result);
+});
