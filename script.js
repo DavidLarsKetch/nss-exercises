@@ -26,6 +26,16 @@ const CardMaker = {
     titleElm.appendChild(titleNode);
   },
   makeBodyMessage: function(cardElm) {
+    const bodyWrapper = document.createElement("div");
+    const bodyCopyElm = document.createElement("p");
+    const bodyCopyNode = document.createTextNode(this.bodyCopy);
+
+    bodyWrapper.className = "bodyWrapper";
+    bodyCopyElm.className = "bodyCopy";
+
+    cardElm.appendChild(bodyWrapper);
+    bodyWrapper.appendChild(bodyCopyElm);
+    bodyCopyElm.appendChild(bodyCopyNode);
   },
   makeFooter: function(cardElm) {
   },
