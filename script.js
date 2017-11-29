@@ -38,6 +38,16 @@ const CardMaker = {
     bodyCopyElm.appendChild(bodyCopyNode);
   },
   makeFooter: function(cardElm) {
+    const footerWrapper = document.createElement("div");
+    const footerTextElm = document.createElement("p");
+    const footerTextNode = document.createTextNode(`DLK Card Co. - Nashville - 2017`);
+
+    footerWrapper.className = "footerWrapper";
+    footerTextElm.className = "footerText";
+
+    cardElm.appendChild(footerWrapper);
+    footerWrapper.appendChild(footerTextElm);
+    footerTextElm.appendChild(footerTextNode);
   },
   assignID: function() {
   },
