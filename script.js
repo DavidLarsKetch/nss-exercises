@@ -76,4 +76,9 @@ const CardMaker = {
 };
 
 //Refactor this to link this object to cardMaker
-const BirthdayCard = Object.create();
+const BirthdayCard = Object.create(CardMaker);
+BirthdayCard.titleString = "Happy Birthday!"
+BirthdayCard.bodyCopy = `It's your birthday, you crazy fool. I hope you celebrate
+                        it in style & with wild abandon. May your next year be
+                        crazier than the last.`;
+BirthdayCard.makeCard();
