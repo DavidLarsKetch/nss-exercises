@@ -90,3 +90,9 @@ CondolencesCard.bodyCopy = `Please accept my deepest condolences on the passing
                            They will live on in my memory forever.`;
 CondolencesCard.makeCard();
 
+const ValentinesCard = Object.create(CardMaker);
+ValentinesCard.titleString = "My Love Forever";
+ValentinesCard.bodyCopy = `It's Valentine's Day, my love. My love for you will go
+                          on forever, I am sure. Let us celebrate our romance today.
+                          Will you be mine?`;
+ValentinesCard.makeCard();
