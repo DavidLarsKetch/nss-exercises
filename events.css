@@ -5,3 +5,7 @@
 .hulkify {
   font-size: 3rem;
 }
+
+.pig-border {
+  border: 3px solid black;
+}

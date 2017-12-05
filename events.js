@@ -10,6 +10,8 @@ document.body.addEventListener("click", event => {
     guineaPig.classList.add("blue-text");
   } else if (clickTarget.id === "make-large") {
     guineaPig.classList.add("hulkify");
+  } else if (clickTarget.id === "add-border") {
+    guineaPig.classList.add("pig-border");
   }
 });
 
