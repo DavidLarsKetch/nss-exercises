@@ -9,3 +9,7 @@
 .pig-border {
   border: 3px solid black;
 }
+
+.round-border {
+  border-radius: 10px;
+}

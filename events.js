@@ -12,6 +12,8 @@ document.body.addEventListener("click", event => {
     guineaPig.classList.add("hulkify");
   } else if (clickTarget.id === "add-border") {
     guineaPig.classList.add("pig-border");
+  } else if (clickTarget.id === "add-rounding") {
+    guineaPig.classList.add("round-border");
   }
 });
 
