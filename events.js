@@ -4,8 +4,11 @@ const guineaPig = document.getElementById("guinea-pig");
 const buttons = document.getElementsByTagName("button");
 const article = document.getElementsByTagName("article");
 const articleFirstChild = article[0].children[0];
+const articleLastChild = article[0].children[article[0].children.length - 1];
+
 articleFirstChild.classList.add("bold");
-// console.log(article[0].children[0]);
+articleLastChild.classList.add("bold-italic");
+
 for (let i = 0; i < buttons.length; i++) {
   let button = buttons.item([i]);
   button.classList.add("button-block");

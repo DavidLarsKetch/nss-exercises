@@ -6,6 +6,11 @@
   font-weight: bold;
 }
 
+.bold-italic {
+  font-style: italic;
+  font-weight: bold;
+}
+
 .button-block {
   display: block;
   margin: 2px;
