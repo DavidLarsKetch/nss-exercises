@@ -13,3 +13,10 @@ document.body.addEventListener("mouseover", event => {
     outputTarget.innerHTML = `You moved your mouse over the header.`;
   }
 });
+
+document.body.addEventListener("mouseout", event => {
+  let mouseoutTarget = event.target;
+  if (mouseoutTarget.localName === "h1") {
+    outputTarget.innerHTML = `You left me!!`;
+  }
+});
