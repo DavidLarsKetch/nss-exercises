@@ -1,4 +1,5 @@
 const outputTarget = document.getElementById("output-target");
+const textInputField = document.getElementById("keypress-input");
 
 document.body.addEventListener("click", event => {
   let clickTarget = event.target;
@@ -19,4 +20,8 @@ document.body.addEventListener("mouseout", event => {
   if (mouseoutTarget.localName === "h1") {
     outputTarget.innerHTML = `You left me!!`;
   }
+});
+
+textInputField.addEventListener("keyup", event => {
+  outputTarget.innerHTML = textInputField.value;
 });
