@@ -1,6 +1,15 @@
 const outputTarget = document.getElementById("output-target");
 const textInputField = document.getElementById("keypress-input");
 const guineaPig = document.getElementById("guinea-pig");
+const buttons = document.getElementsByTagName("button");
+const article = document.getElementsByTagName("article");
+const articleFirstChild = article[0].children[0];
+articleFirstChild.classList.add("bold");
+// console.log(article[0].children[0]);
+for (let i = 0; i < buttons.length; i++) {
+  let button = buttons.item([i]);
+  button.classList.add("button-block");
+}
 
 document.body.addEventListener("click", event => {
   let clickTarget = event.target;
