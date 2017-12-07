@@ -8,3 +8,7 @@
 .philosopher:nth-child(even) {
   background: lightyellow;
 }
+
+.philosopher:nth-child(odd) {
+  background: lightblue;
+}
