@@ -4,3 +4,7 @@
   margin: 3px;
   width: 30%;
 }
+
+.philosopher:nth-child(even) {
+  background: lightyellow;
+}
