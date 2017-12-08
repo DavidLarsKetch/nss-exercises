@@ -1,10 +1,10 @@
 module.exports = function(grunt) {
   grunt.initConfig({
     browserify: {
-      'dist/bundle.js': ['javascripts/main.js']
+      'dist/bundle.js': ['module-xhr.js']
     },
     jshint: {
-      files: ["javascripts/**/*.js"],
+      files: ["*.js"],
       options: {
         predef: ["document", "console"],
         esnext: true,
@@ -13,22 +13,11 @@ module.exports = function(grunt) {
         browserify: true
       }
     },
-    sass: {
-      dist: {
-        files: {
-          "stylesheets/main.css": "sass/main.scss"
-        }
-      }
-    },
     watch: {
       javascripts: {
-        files: ["javascripts/**/*.js"],
+        files: ["*.js"],
         tasks: ["jshint", "browserify"]
       },
-      sass: {
-        files: ["sass/**/*.scss"],
-        tasks: ["sass"]
-      }
     }
   });
 
@@ -36,5 +25,5 @@ module.exports = function(grunt) {
     .filter("grunt-*")
     .forEach(grunt.loadNpmTasks);
 
-  grunt.registerTask("default", ['jshint', 'sass', 'browserify', 'watch']);
+  grunt.registerTask("default", ['jshint', 'browserify', 'watch']);
 };
