@@ -1,13 +1,12 @@
 function reversal(str) {
-  let arr = str.split('').reverse().join('');
+  let newStr = str.split('').reverse().join('');
 }
 
-function alphabits() {
-
+function alphabits(str) {
+  let newStr = str.toLowerCase().split('').sort().join('')
 }
 
 function palindrome() {
-
 }
 
 var testString = "Hey there!";
