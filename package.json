@@ -1,0 +1,19 @@
+{
+  "name": "020-modules-xhr",
+  "version": "1.0.0",
+  "description": "Exercise 020 - Single Page Applications - Modules, XHRs and Callbacks, Oh My",
+  "main": "module-xhr.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidLarsKetch/020-modules-xhr.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DavidLarsKetch/020-modules-xhr/issues"
+  },
+  "homepage": "https://github.com/DavidLarsKetch/020-modules-xhr#readme"
+}
