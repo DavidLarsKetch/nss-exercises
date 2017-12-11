@@ -45,3 +45,9 @@ textarea {
 .philosopher:nth-child(odd) {
   background: lightblue;
 }
+
+
+.dotted {
+  border: 2px dotted black;
+  margin: 8px;
+}
