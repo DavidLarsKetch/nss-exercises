@@ -87,4 +87,30 @@ const createElms = data => {
   wrapper.appendChild(footer);
   return wrapper;
 }
+const addListeners = () => {
+  let philosopherTarget;
+  const input = document.getElementById("textInput");
+  let philosopherList = document.getElementsByClassName("philosopher");
+  philosopherList = [...philosopherList];
+
+  philosopherList.forEach( item => {
+    item.addEventListener("click", event => {
+      philosopherList.forEach( item => item.classList.remove("dotted"));
+      philosopherTarget = event.currentTarget;
+      philosopherTarget.classList.toggle("dotted");
+      input.value = "";
+      input.focus();
+    });
+  });
+
+  input.addEventListener("keyup", event => {
+    if (input.value !== "") {
+      philosopherTarget.children[1].firstChild.innerHTML = input.value;
+    }
+    if (event.key === "Enter") {
+      event.preventDefault();
+      input.value = "";
+    }
+  });
+}
 printPhilosophers(famousContinentals);
