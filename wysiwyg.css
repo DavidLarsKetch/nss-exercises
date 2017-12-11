@@ -1,10 +1,43 @@
-.philosopher {
-  border: 1px solid black;
-  height: 300px;
-  margin: 3px;
-  width: 30%;
+html,
+body {
+  box-sizing: border-box;
 }
 
+img {
+  display: block;
+  margin: auto;
+  max-height: 150px;
+  max-width: 150px;
+}
+
+textarea {
+  display: block;
+  font-size: 1.5rem;
+  margin: auto;
+}
+
+.center {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.philosopher {
+  flex: 0 1 25vw;
+  margin: 10px;
+  padding: 10px;
+}
+
+.philosopher * {
+  margin-bottom: 7px;
+  margin-top: 7px;
+  text-align: center;
+}
 .philosopher:nth-child(even) {
   background: lightyellow;
 }
