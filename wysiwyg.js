@@ -87,6 +87,7 @@ const createElms = data => {
   wrapper.appendChild(footer);
   return wrapper;
 }
+
 const addListeners = () => {
   let philosopherTarget;
   const input = document.getElementById("textInput");
