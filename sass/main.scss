@@ -1,0 +1,25 @@
+select {
+  display: block;
+  margin: 3vh auto;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  border: 1px solid;
+  flex: 0 1 20vw;
+  margin: 1vw;
+  text-align: center;
+}
+
+.discount {
+  color: red;
+}
+
+.hidden {
+  display: none;
+}
