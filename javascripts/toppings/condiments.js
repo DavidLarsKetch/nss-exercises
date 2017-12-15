@@ -1,15 +1,12 @@
+"use strict";
+
 const condiments = {
-  ketchup: .05,
-  mustard: .1,
-  dijon: .2
-  mayo: .1,
-  sriracha: .15,
-  "oil n vin": .15,
-  pesto: .25
-}
+  mustard: 0.1,
+  mayo: 0.1,
+  sriracha: 0.15,
+  pesto: 0.25
+};
 
-const addCondiment = selection => {
+module.exports.get = selection => {
   return condiments[selection];
-}
-
-module.exports = addCondiment;
+};

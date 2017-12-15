@@ -1,18 +1,13 @@
+"use strict";
+
 const veggies = {
-  "bell pepper": .75,
-  "summer squash": .65,
-  tomato: .3,
-  lettuce: .15,
-  arugula: .3,
-  spinach: .25,
-  carrot: .3,
-  "sauteed mushrooms": .5,
-  "red onion": .3,
-  "sauteed onions": .4
-}
+  tomato: 0.3,
+  lettuce: 0.15,
+  arugula: 0.3,
+  spinach: 0.25,
+  carrot: 0.3
+};
 
-const getVeggies = selection => {
+module.exports.get = selection => {
   return veggies[selection];
-}
-
-module.exports = getVeggies;
+};

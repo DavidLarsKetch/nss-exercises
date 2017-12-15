@@ -1,15 +1,13 @@
+"use strict";
+
 const cheese = {
-  cheddar: .2,
-  american: .15,
-  gouda: .4,
-  manchego: .35,
-  brie: .25,
-  bleu: .25,
-  parmesan: .3
-}
+  cheddar: 0.2,
+  american: 0.15,
+  gouda: 0.4,
+  bleu: 0.25,
+  parmesan: 0.3
+};
 
-const addCheese = selection => {
+module.exports.get = selection => {
   return cheese[selection];
-}
-
-module.exports = addCheese;
+};
