@@ -2,7 +2,7 @@ module.exports = function(grunt) {
   grunt.initConfig({
     browserify: {
       files: {
-        src: './assets/js/main.js',
+        src: ['./assets/js/main.js', './assets/templates/*.hbs'],
         dest: './dist/app.js'
       },
       options: {
@@ -19,17 +19,25 @@ module.exports = function(grunt) {
         browserify: true
       }
     },
+    sass: {
+      dist: {
+        files: {
+          "assets/stylesheets/main.css": "assets/sass/main.scss"
+        }
+      }
+    },
     watch: {
       javascripts: {
         files: ['./assets/js/**/*.js'],
-        tasks: ['jshint', 'browserify']
+        tasks: ['jshint', 'sass', 'browserify']
       },
       hbs: {
-        files: ['./assets/templates/**/*.hbs']
+        files: ['./assets/templates/**/*.hbs'],
+        tasks: ['browserify']
       }
     }
   });
 
   require('matchdep').filter('grunt-*').forEach(grunt.loadNpmTasks);
-  grunt.registerTask('default', ['jshint', 'browserify', 'watch']);
+  grunt.registerTask('default', ['jshint', 'sass', 'browserify', 'watch']);
 };
