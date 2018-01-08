@@ -1,0 +1,49 @@
+body {
+  background: lightsalmon;
+}
+
+button, input {
+  margin: 1rem;
+}
+
+#container {
+  margin: 0 auto;
+  width: 80vw;
+}
+
+.directions {
+  background: lightblue;
+  border: 1px solid #222;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.error, .wrong-dates {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.headline {
+  text-align: center;
+}
+
+.inputs {
+  margin: 0 auto;
+}
+
+.message {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.msg-wrapper {
+  background: cornflowerblue;
+  border: 1px solid #222;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+.subtitle {
+  font-style: italic;
+  text-align: right;
+}
