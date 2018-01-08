@@ -8,3 +8,6 @@ const foTemplate = require('../templates/partials/fuck-off.hbs');
 const xhr = require('./xhr');
 const listener = require('./events');
 const processor = require("./processor");
+
+$("#container").append(foaasTemplate);
+listener.addBtnClick(callXHR);
