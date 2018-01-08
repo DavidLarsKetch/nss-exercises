@@ -15,6 +15,21 @@ function organizeDates() {
   arr = [];
 }
 
+function check() {
+  //Checks whether dates fit parameters of NASA API.
+  let dateRegEx = new RegExp(/^\d{4}-\d{2}-\d{2}/, 'g');
+  let result = dateRegEx.test(`${range.from} ${range.to}`);
+  if (result) {
+    //Converts dates to milliseconds
+    let date1 = new Date(range.to).getTime();
+    let date2 = new Date(range.from).getTime();
+    let diff = Math.abs(date1 - date2);
+    //Checks whether the date range exceeds 7 days, in milliseconds
+    result = diff < 604800000 ? true : false;
+  }
+  return result;
+}
+
 module.exports.addBtnClick = (fn) => {
   $("#enter").click(() => {
     organizeDates();
