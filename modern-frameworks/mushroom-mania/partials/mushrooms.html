@@ -2,7 +2,7 @@
 <input type="radio" name="shrooms" value="edible" ng-click="getEdible()">edible
 <input type="radio" name="shrooms" value="poisonous" ng-click="getPoisonous()">poisonous
 <ul>
-  <li ng-repeat="shroom in shrooms | filter: shroomSearch">
+  <li ng-repeat="shroom in shrooms | filter: {description: shroomSearch}">
     <p>{{shroom.name}}</p>
     <p>{{shroom.description}}</p>
   </li>
