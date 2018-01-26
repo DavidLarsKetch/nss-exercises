@@ -1,0 +1,7 @@
+.book {
+  border: 1px solid;
+  display: inline-block;
+  padding: 1rem;
+  margin: 1rem;
+  text-align: center;
+}
