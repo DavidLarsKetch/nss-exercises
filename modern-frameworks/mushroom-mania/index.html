@@ -5,12 +5,17 @@
     <title>024 Mushroom Mania</title>
     <link rel="stylesheet" href="/css/main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js" charset="utf-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js" charset="utf-8"></script>
   </head>
   <body ng-app="ShroomApp">
     <div ng-controller="ShroomCtrl">
       <h1>{{title}}</h1>
+      <div ng-view></div>
     </div>
     <script src="scripts/app.js" charset="utf-8"></script>
+    <!-- Controllers -->
     <script src="scripts/controllers/shroom-ctrl.js" charset="utf-8"></script>
+    <!-- Factories -->
+    <script src="scripts/factories/shroom-factory.js" charset="utf-8"></script>
   </body>
 </html>
