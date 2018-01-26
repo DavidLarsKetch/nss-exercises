@@ -5,7 +5,6 @@ angular.module("ShroomApp").controller("ShroomCtrl", function($scope, ShroomFact
 
   ShroomFactory.getShrooms()
   .then(shroomData => {
-    console.log(shroomData.data);
     let firebaseID = Object.keys(shroomData.data);
     let shrooms = Object.keys(shroomData.data[firebaseID]);
     $scope.allShrooms = shrooms.map(shroom => shroomData.data[firebaseID][shroom]);
