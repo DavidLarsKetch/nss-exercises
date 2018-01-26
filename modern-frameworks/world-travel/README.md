@@ -1,8 +1,9 @@
-# Wide World Travel Guides
+Installation instructions:
+- Clone repo
+- `npm install && grunt`
 
-> Installation instructions:
-> - Clone repo
-> - `npm install && grunt`
+# ORIGINAL REQS
+# Wide World Travel Guides
 
 #### Part 1: Using a controller
 
