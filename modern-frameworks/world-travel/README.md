@@ -1,5 +1,6 @@
 Installation instructions:
 - Clone repo
+- `cd nss-completed-exercise/modern-frameworks/world-travel
 - `npm install && grunt`
 
 # ORIGINAL REQS
