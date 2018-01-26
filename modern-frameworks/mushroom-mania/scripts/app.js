@@ -1,3 +1,9 @@
 "use strict";
 
-const app = angular.module("ShroomApp", []);
+angular.module("ShroomApp", ['ngRoute'])
+.config($routeProvider => {
+  $routeProvider
+  .when('/', {
+    templateUrl: 'partials/mushrooms.html',
+  })
+});
