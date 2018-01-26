@@ -29,6 +29,17 @@ You will need:
 1. Load the JSON below into a new Firebase application rather than reading it from a local file.
 1. Put the JSON object into `$scope.mushrooms` and bind that variable in your partial.
 
+## Exercise 25 Reqs
+Requirements
+
+You are going to modify your Mushroom Mania application to use a factory to retrieve the mushroom data instead of retrieving it directly in your controller.
+
+    Create a new factory for your Angular application. Make sure your factory returns something.
+    Inject the factory dependency into your controller.
+    Invoke the appropriate function that your factory exposes to get the mushroom data.
+    When the method is successful, take the results and put them into $scope.mushrooms variable in your controller that is bound to the partial.
+
+
 ### Data
 
 ```js
