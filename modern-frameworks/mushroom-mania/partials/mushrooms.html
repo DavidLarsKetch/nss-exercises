@@ -1,0 +1,8 @@
+<input type="text" placeholder="Search" ng-model="shroomSearch" ng-click="getAll()">
+<input type="radio" name="shrooms" value="edible" ng-click="getEdible()">edible
+<input type="radio" name="shrooms" value="poisonous" ng-click="getPoisonous()">poisonous
+<ul>
+  <li ng-repeat="shroom in shrooms | filter: shroomSearch">
+    <p>{{shroom.name}}</p>
+  </li>
+</ul>
