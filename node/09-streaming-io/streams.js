@@ -9,19 +9,10 @@ if (!input || !output) {
 	process.exit();
 }
 
-const { createReadStream, writeFile } = require('fs');
-const { Transform, Writable } = require('stream');
+const { createReadStream, createWriteStream, writeFile } = require('fs');
+const { Transform } = require('stream');
 
 const upperCaseify = Transform();
-upperCaseify._transform = (buffer, _, cb) =>
-	cb(null, buffer.toString().toUpperCase());
+upperCaseify._transform = (buffer, _, cb) => cb(null, buffer.toString().toUpperCase());
 
-const writeStream = Writable();
-writeStream._write = (buffer, _, next) => {
-	writeFile(output, buffer, err => {
-		if (err) throw err;
-	});
-	next();
-};
-
-createReadStream(input).pipe(upperCaseify).pipe(writeStream);
+createReadStream(input).pipe(upperCaseify).pipe(createWriteStream(`${output}`));
