@@ -1,0 +1,51 @@
+{
+  "employees": [{
+      "id": 0,
+      "firstName": "James",
+      "lastName": "Franco",
+      "jobTitle": "crazy",
+      "address": "123 Crazy St",
+      "salary": 51000
+    },
+    {
+      "id": 1,
+      "firstName": "Emily",
+      "lastName": "Blunt",
+      "jobTitle": "actor",
+      "address": "123 Hollywood Ln",
+      "salary": 31000
+    },
+    {
+      "id": 2,
+      "firstName": "Daniel",
+      "lastName": "Day Lewis",
+      "jobTitle": "cobbler",
+      "address": "249 Shoe St",
+      "salary": 61000
+    },
+    {
+      "id": 3,
+      "firstName": "Tiffany",
+      "lastName": "Goodman",
+      "jobTitle": "assistant",
+      "address": "482 Best Rd",
+      "salary": 876000
+    },
+    {
+      "id": 4,
+      "firstName": "Jessie",
+      "lastName": "James",
+      "jobTitle": "bandit",
+      "address": "23 Wild West St",
+      "salary": 1000
+    },
+    {
+      "id": 5,
+      "firstName": "Frank",
+      "lastName": "Gerry",
+      "jobTitle": "sales",
+      "address": "847 Greenwood Rd",
+      "salary": 50000
+    }
+  ]
+}
