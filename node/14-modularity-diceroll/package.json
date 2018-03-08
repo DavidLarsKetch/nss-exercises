@@ -2,15 +2,20 @@
   "name": "14-modularity-diceroll",
   "version": "1.0.0",
   "description": "Role an n-sided die any number of times & get the total",
-  "main": "",
+  "main": "index.js",
   "bin": {
     "dice-roll": "dice-roll/bin/dice-roll"
   },
   "scripts": {
     "dice-roll": "dice-roll",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha -R list --watch"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.0.4"
+  },
+  "devDependencies": {}
 }

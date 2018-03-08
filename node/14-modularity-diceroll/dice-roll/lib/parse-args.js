@@ -1,10 +1,10 @@
 "use strict";
 
-module.exports = args => {
+module.exports = ([arg1, sides]) => {
 // Default 1d6 roll if no user options are entered
-  if (args.length === 0) return {count: 1, sides: 6}
-// Defaul 1dN roll if user passes in only 1 option
-  if (args.length < 2) return {count: 1, sides: args}
+  if (!arg1) return {count: 1, sides: 6}
+// Default 1dN roll if user passes in only 1 option
+  if (!sides) return {count: 1, sides: arg1}
 // Otherwise, rolls the dice entered w/ 2 options
-  return {count: args[0], sides: args[1]}
+  return {count: arg1, sides}
 };
