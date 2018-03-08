@@ -8,6 +8,6 @@ const roll = dice => {
 };
 
 // Creates dice notation as per reqs
-const toDiceNotation = ({count, sides}) => `${count}d${sides}`;
+const toDiceNotation = (count, sides) => `${count}d${sides}`;
 
 module.exports = {roll, toDiceNotation};
