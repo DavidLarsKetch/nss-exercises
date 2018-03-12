@@ -1,26 +1,26 @@
 "use strict";
 
-const { assert: { fail } } = require('chai');
+const { assert: { equal, fail, throws } } = require('chai');
 
 const { addItem } = require('../lib/add');
+const { createTables } = require('../lib/db');
 
 describe('add module', () => {
+  // Resets DB before each test
+  beforeEach(function(done) {
+    createTables()
+    .then(() => done());
+  });
+
   describe('addItem()', () => {
-    it('should be called by user inputting "add" as first arg in CLI',
-    () => {
-      fail();
-    });
-
-    it("should take a child's name as the second arg in CLI", () => {
-      fail();
-    });
-
-    it("should take an item as the third arg in CLI", () => {
-      fail();
+    it('should throw an error if data is not valid', () => {
+      throws(() => {addItem({child: undefined, gift: undefined});}, Error, 'sup');
     });
 
     it("should add an item under a child's name in the db", () => {
-      fail();
+      let test = {child: 'greg', gift: 'crayons'};
+      return addItem(test)
+      .then(obj => equal(19, obj.id));
     });
   });
 });

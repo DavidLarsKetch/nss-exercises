@@ -1,19 +1,21 @@
 "use strict";
 
-const { assert: { fail } } = require('chai');
+const { assert: { isArray } } = require('chai');
 
 const { listChildsToy, listGoodChildren } = require('../lib/list');
 
 describe('list module', () => {
   describe('listChildsToy()', () => {
-    it('should', () => {
-      fail();
+    it('should return an array', () => {
+      return listGoodChildren()
+      .then(gifts => isArray(gifts));
     });
   });
 
   describe('listGoodChildren', () => {
-    it('should', () => {
-      fail();
+    it('should return an array', () => {
+      return listGoodChildren()
+      .then(kids => isArray(kids));
     });
   });
 });

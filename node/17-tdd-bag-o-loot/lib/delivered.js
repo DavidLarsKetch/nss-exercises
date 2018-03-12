@@ -1,3 +1,6 @@
 "use strict";
 
-module.exports.markAsDelivered = () => {};
+module.exports.markAsDelivered = () =>
+  new Promise((resolve, reject) => {
+    resolve("Gift delivered");
+  });

@@ -2,28 +2,17 @@
 
 const { errorEmitter } = require('./errors');
 
-const { data } = require('../data/children');
-const { Database } = require('sqlite3').verbose();
-const db = new Database('data/gifts.sqlite', err => {
-  if (err) errorEmitter.emit('db_err', () => console.log(new Error("failed connection")));
-  db.serialize(() => {
-    db.run(`DROP TABLE IF EXISTS gifts`);
-    db.run(`CREATE TABLE IF NOT EXISTS gifts (id INTEGER PRIMARY KEY, child TEXT, gift TEXT, delivered INTEGER)`);
-    data.forEach(({id, child, gift, delivered}) => db.run(
-      `INSERT INTO gifts VALUES(
-      ${id},
-      "${child}",
-      "${gift}",
-      ${delivered}
-    )`));
-  });
-
-});
-
+const { createDB } = require('./db');
 
 const { argv: [,,...args] } = process;
 const inputs = require('./parse-args')(args);
-
-const caller = obj => obj.fn(inputs || obj);
+const caller = obj => {
+  obj.fn(obj)
+  .then(({id}) => {
+    console.log(id);
+    return id;
+  })
+  .catch(err => errorEmitter.emit('db_err', () => err));
+};
 
 module.exports = { caller };

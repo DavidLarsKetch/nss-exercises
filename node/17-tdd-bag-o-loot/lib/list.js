@@ -1,5 +1,11 @@
 "use strict";
 
-module.exports.listChildsToy = child => {};
+module.exports.listChildsToy = child =>
+  new Promise((resolve, reject) => {
+    resolve([]);
+  });
 
-module.exports.listGoodChildren = () => {};
+module.exports.listGoodChildren = () =>
+  new Promise((resolve, reject) => {
+    resolve([]);
+  });

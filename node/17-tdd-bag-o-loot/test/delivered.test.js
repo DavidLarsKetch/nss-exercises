@@ -1,13 +1,15 @@
 "use strict";
 
-const { assert: { fail } } = require('chai');
+const { assert: { equal } } = require('chai');
 
 const { markAsDelivered } = require('../lib/delivered');
 
 describe('delivered module', () => {
   describe('markAsDelivered()', () => {
-    it('should', () => {
-      fail();
+    it('should return a confirmation', () => {
+      const expected = 'Gift delivered';
+      return markAsDelivered()
+      .then(msg => equal(expected, msg))
     });
   });
 });
