@@ -1,14 +1,20 @@
 "use strict";
 
-const { assert: { deepEqual, equal, isObject, throws } } = require('chai');
+const { assert: { deepEqual, equal, throws } } = require('chai');
 
 const parse = require('../lib/parse-args'),
       { addItem } = require('../lib/add'),
       { markAsDelivered } = require('../lib/delivered'),
       { listChildsToy, listGoodChildren } = require('../lib/list'),
-      { removeItemForChild } = require('../lib/remove');
+      { removeItemForChild } = require('../lib/remove'),
+      { createTables } = require('../lib/db');
 
 describe('parse-args module', () => {
+  beforeEach(function(done) {
+    createTables()
+    .then(() => done());
+  });
+
   it(`should return an obj, when "add" is passed in, matching `, () => {
     let obj = {fn: addItem, gift: 'gamecube', child: "ben"}
     deepEqual(parse(['add', 'gamecube', 'ben']), obj);
