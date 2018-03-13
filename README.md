@@ -14,7 +14,6 @@ Exercises completed while attending the Nashville Software School (**Cohort 23, 
 [World Travel](https://github.com/DavidLarsKetch/nss-completed-exercise/tree/master/modern-frameworks/world-travel)
 
 ## Node
-Each exercise `JS` file can be run as executables as well
 ### [Exercise 2](https://github.com/DavidLarsKetch/nss-completed-exercise/tree/master/node/02-dir-execution)
 Run:
 `node node/02-dir-execution/index.js`
@@ -46,3 +45,34 @@ Run:
 ### [Exercise 9](https://github.com/DavidLarsKetch/nss-completed-exercise/tree/master/node/09-streaming-io)
 Run:
 `node node/09-streaming-io/streams.js [input-file-name or node/09-streaming-io/languages.json] [output-file-name]`
+
+### [Exercise 11](https://github.com/DavidLarsKetch/nss-completed-exercise/tree/master/node/11-sql-queries)
+Run:
+Connect to `node/11-sql-queries/musichistory.db`
+Run commands in `node/11-sql-queries/queries.sql`
+
+### [Exercise 12](https://github.com/DavidLarsKetch/nss-completed-exercise/tree/master/node/12-sqlite-create-db)
+Run:
+`node node/12-sqlite-create-db/sqlite3Intro.js`
+
+### [Exercise 13](https://github.com/DavidLarsKetch/nss-completed-exercise/tree/master/node/13-sqlite-create-db-2)
+Run:
+`node node/13-sqlite-create-db-2/sqlite3.js [job title]`
+
+### [Exercise 14](https://github.com/DavidLarsKetch/nss-completed-exercise/tree/master/node/14-modularity-diceroll)
+Run:
+`npm install -g node/14-modularity-diceroll/dice-roll/bin/dice-roll`
+`dice-roll [opt: # of rolls] [opt: sides]`
+Options:
+Runs with 0, 1, or 2 options
+
+### [Exercise 17](https://github.com/DavidLarsKetch/nss-completed-exercise/tree/master/node/17-tdd-bag-o-loot)
+Run:
+`node node/17-tdd-bag-o-loot [options]`
+Options:
+`add [gift] [child]`
+`remove [child] [gift]`
+`ls`
+`ls [child]`
+`delivered [child]`
+
