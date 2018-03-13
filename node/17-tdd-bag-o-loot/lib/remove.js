@@ -1,6 +1,19 @@
 "use strict";
+const { errorEmitter } = require('./errors');
 
-module.exports.removeItemForChild = () =>
+const { Database } = require('sqlite3').verbose();
+const db = new Database('gifts.sqlite', err => {
+  if (err) errorEmitter.emit('db_err',
+    () => console.log(new Error("failed connection"))
+  );
+});
+
+module.exports.removeItemForChild = ({ child, gift }) =>
   new Promise((resolve, reject) => {
-    resolve('Gift removed from db');
+    db.run(`DELETE FROM gifts WHERE gift="${gift}" AND child="${child}"`,
+      function(err) {
+        if(err) reject(err);
+        resolve('Gift removed from db');
+      }
+    );
   });
