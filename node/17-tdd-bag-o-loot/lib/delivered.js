@@ -8,7 +8,7 @@ const db = new Database('gifts.sqlite', err => {
   );
 });
 
-module.exports.markAsDelivered = child =>
+module.exports.markAsDelivered = ({child}) =>
   new Promise((resolve, reject) => {
     db.serialize(() => {
       db.all(
@@ -22,7 +22,7 @@ module.exports.markAsDelivered = child =>
       db.run(`UPDATE gifts SET delivered=1 WHERE child="${child}"`,
         function(err) {
           if (err) reject(err);
-          resolve({num: this.changes, msg: "Gift delivered"});
+          resolve({num: this.changes, msg: `Gifts delivered for ${child}!`});
         }
       );
     });

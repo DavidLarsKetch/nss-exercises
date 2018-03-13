@@ -14,21 +14,21 @@ describe('delivered module', () => {
     });
 
     it('should return a confirmation', () => {
-      const expected = 'Gift delivered';
-      return markAsDelivered('fatim')
+      const expected = `Gifts delivered for fatim!`;
+      return markAsDelivered({child: 'fatim'})
       .then(({msg}) => equal(expected, msg))
     });
 
     it('should change the value of delivered from 0 to number of child\'s gifts',
       () => {
-      return markAsDelivered('fatim') // Fatim has 2 gifts
+      return markAsDelivered({child: 'fatim'}) // Fatim has 2 gifts
       .then(({num}) => equal(2, num))
       }
     );
 
     it('should return the expected message on invalid child option', () => {
       const expected = 'Not a child';
-      return markAsDelivered('franklin')
+      return markAsDelivered({child: 'franklin'}) // Not a child in the db
       .then(({msg}) => equal(msg, expected))
     });
   });
