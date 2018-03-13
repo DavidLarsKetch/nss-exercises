@@ -71,7 +71,7 @@ Run:
 
 `node node/13-sqlite-create-db-2/sqlite3.js [job title]`
 
-### [Exercise 14](https://github.com/DavidLarsKetch/nss-completed-exercise/tree/master/node/14-modularity-diceroll)
+### [Exercise 14 & 15](https://github.com/DavidLarsKetch/nss-completed-exercise/tree/master/node/14-modularity-diceroll)
 Run:
 
 `npm install -g node/14-modularity-diceroll/dice-roll/bin/dice-roll`
@@ -81,6 +81,10 @@ Run:
 Options:
 
 Runs with 0, 1, or 2 options
+
+Test:
+
+`npm test`
 
 ### [Exercise 17](https://github.com/DavidLarsKetch/nss-completed-exercise/tree/master/node/17-tdd-bag-o-loot)
 Run:
