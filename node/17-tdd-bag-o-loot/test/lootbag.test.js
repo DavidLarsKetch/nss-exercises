@@ -32,7 +32,7 @@ describe('lootbag module', () => {
       .then(callerReturn =>
         removeItemForChild(parsed)
         .then(fnReturn =>
-          equal(fnReturn, callerReturn)
+          deepEqual(fnReturn, callerReturn)
         )
       );
     });
