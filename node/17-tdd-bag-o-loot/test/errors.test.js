@@ -1,10 +1,18 @@
 "use strict";
 
-const { assert: { equal, isTrue } } = require('chai');
+const { assert: { } } = require('chai');
 const { errorEmitter } = require('../lib/errors');
 
 describe('error module', () => {
   describe('errorEmitter', () => {
+    describe('bad_args', () => {
+  // If there is no errorEmitter.on('bad_args') in the app, this will timeout
+      it('should not timeout on a bad_args emit', done => {
+  // errorEmitter.on('bad_args') calls done(), thus passing the test
+        errorEmitter.emit('bad_args', done);
+      });
+    });
+
     describe('parse_err', () => {
   // If there is no errorEmitter.on('parse_err') in the app, this will timeout
       it('should not timeout on a parse_err emit', done => {
