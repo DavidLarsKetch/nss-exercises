@@ -6,13 +6,9 @@ const { createDB } = require('./db');
 
 const { argv: [,,...args] } = process;
 const inputs = require('./parse-args')(args);
-const caller = obj => {
-  obj.fn(obj)
-  .then(({id}) => {
-    console.log(id);
-    return id;
-  })
+const caller = obj =>
+  obj.fn(inputs || obj)
+  .then(data => data)
   .catch(err => errorEmitter.emit('db_err', () => err));
-};
 
 module.exports = { caller };
