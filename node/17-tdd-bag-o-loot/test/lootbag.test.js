@@ -1,44 +1,76 @@
 "use strict";
 
-const { assert: { equal, fail } } = require('chai');
+const { assert: { deepEqual, equal } } = require('chai');
 
 const { caller } = require('../lib/lootbag'),
       parse = require('../lib/parse-args'),
       { addItem } = require('../lib/add'),
       { markAsDelivered } = require('../lib/delivered'),
       { listChildsToy, listGoodChildren } = require('../lib/list'),
-      { removeItemForChild } = require('../lib/remove');
+      { removeItemForChild } = require('../lib/remove'),
+      { createTables } = require('../lib/db');
 
 describe('lootbag module', () => {
-  describe('callFn()', () => {
-    it('should call addItem() by user inputting "add" as first arg in CLI',
-    () => {
-      let parsed = parse(['add']);
-      equal(caller(parsed), addItem());
+  describe('caller()', () => {
+
+    beforeEach(function(done) {
+      createTables()
+      .then(() => done());
     });
 
-    it('should call removeItemForChild() by user inputting "remove" as first arg in CLI',
+    it('should call addItem() thru caller() & return 19',
     () => {
-      let parsed = parse(['remove']);
-      equal(caller(parsed), removeItemForChild());
+      let parsed = parse(['add', 'stacy', 'stick']);
+      return caller(parsed)
+      .then(({id}) => equal(19, id));
     });
 
-    it('should call listGoodChildren() by user inputting "ls" as first arg in CLI',
+    it('should call removeItemForChild() thru caller() & return the same values as calling removeItemForChild() directly',
+    () => {
+      let parsed = parse(['remove', 'grace', 'doll']);
+      return caller(parsed)
+      .then(callerReturn =>
+        removeItemForChild(parsed)
+        .then(fnReturn =>
+          deepEqual(fnReturn, callerReturn)
+        )
+      );
+    });
+
+    it('should call listGoodChildren() thru caller() & return the same values as calling listGoodChildren() directly',
     () => {
       let parsed = parse(['ls']);
-      equal(caller(parsed), listGoodChildren());
+      return caller(parsed)
+      .then(callerReturn =>
+        listGoodChildren(parsed)
+        .then(fnReturn =>
+          deepEqual(fnReturn, callerReturn)
+        )
+      );
     });
 
-    it('should call listChildsToys() by user inputting "ls [name]" as first & second args in CLI',
+    it('should call listChildsToy() thru caller() & return the same values as calling listChildsToy() directly',
     () => {
       let parsed = parse(['ls', 'ben']);
-      equal(caller(parsed), listChildsToy());
+      return caller(parsed)
+      .then(callerReturn =>
+        listChildsToy(parsed)
+        .then(fnReturn =>
+          deepEqual(fnReturn, callerReturn)
+        )
+      );
     });
 
-    it('should call markAsDelivered() by user inputting "delivered" as first arg in CLI',
+    it('should call markAsDelivered() thru caller() & return the same values as calling markAsDelivered() directly',
     () => {
       let parsed = parse(['delivered']);
-      equal(caller(parsed), markAsDelivered());
+      return caller(parsed)
+      .then(callerReturn =>
+        markAsDelivered(parsed)
+        .then(fnReturn =>
+          deepEqual(fnReturn, callerReturn)
+        )
+      );
     });
   });
 });
