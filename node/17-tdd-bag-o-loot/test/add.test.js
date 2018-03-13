@@ -1,6 +1,6 @@
 "use strict";
 
-const { assert: { equal, fail, throws } } = require('chai');
+const { assert: { equal, throws } } = require('chai');
 
 const { addItem } = require('../lib/add');
 const { createTables } = require('../lib/db');

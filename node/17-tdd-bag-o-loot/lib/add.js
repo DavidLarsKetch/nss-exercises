@@ -14,7 +14,7 @@ const validateObj = obj =>
   && typeof obj.gift !== "string" ? true : false;
 
 module.exports.addItem = obj => {
-  if (!obj || validateObj(obj)) throw new Error('sup');
+  if (!obj || validateObj(obj)) throw new Error('Check your arguments');
   return new Promise((resolve, reject) => {
     db.run(`INSERT INTO gifts (id, child, gift, delivered)
     VALUES(
@@ -25,7 +25,10 @@ module.exports.addItem = obj => {
     )`,
     function (err){
       if (err) return reject(err);
-      resolve( {id: this.lastID} );
+      resolve({
+        id: this.lastID,
+        msg: `Successfully added: a ${obj.gift} for ${obj.child}`
+      });
     });
   });
 };
