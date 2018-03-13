@@ -8,7 +8,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha -R dot --watch"
+    "test": "mocha -R nyan --watch"
   },
   "keywords": [],
   "author": "",

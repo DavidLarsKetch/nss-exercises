@@ -14,7 +14,7 @@ describe('add module', () => {
 
   describe('addItem()', () => {
     it('should throw an error if data is not valid', () => {
-      throws(() => {addItem({child: undefined, gift: undefined});}, Error, 'sup');
+      throws(() => {addItem({child: undefined, gift: undefined});}, Error, 'Check your arguments');
     });
 
     it("should add an item under a child's name in the db", () => {
