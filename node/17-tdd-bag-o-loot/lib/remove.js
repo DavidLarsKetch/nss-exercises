@@ -13,7 +13,9 @@ module.exports.removeItemForChild = ({ child, gift }) =>
     db.run(`DELETE FROM gifts WHERE gift="${gift}" AND child="${child}"`,
       function(err) {
         if(err) reject(err);
-        resolve('Gift removed from db');
+        resolve({
+          msg: 'Gift removed from db'
+        });
       }
     );
   });
