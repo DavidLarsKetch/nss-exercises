@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 "use strict";
 
 const { get } = require('https');
@@ -7,8 +9,8 @@ const { argv: [,,ticker] } = process;
 
 const yearAvg = data => {
   let days = data.length;
-  let close = data.map(({close}) => close);
-  let total = close.reduce((a,b) => a + b);
+
+  let total = data.map(({close}) => close).reduce((a,b) => a + b);
   return Math.floor(total / days);
 };
 
@@ -37,9 +39,7 @@ get(`${url}/stock/${ticker}/chart/1y`, (res) => {
   res.on('data', chunk => rawData += chunk);
   res.on('end', () => {
     try {
-      let parsedData = JSON.parse(rawData);
-      //console.log(parsedData);
-      let avg = yearAvg(parsedData);
+      let avg = yearAvg(JSON.parse(rawData));
       console.log(`The yearly average close for ${ticker} was: ${avg}`);
     } catch (e) {
       console.log(e.message);
