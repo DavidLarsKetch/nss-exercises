@@ -117,3 +117,14 @@ Run:
 `node node/19-http-server/server01.js`
 
 Broswer: `localhost:8081`
+
+### [Exercise 20](https://github.com/DavidLarsKetch/nss-completed-exercise/tree/master/node/20-express-hello-world)
+Run:
+
+`[opt: PORT] node node/20-express-hello-world/express-hello-world.js`
+
+Browser: `localhost:[8080 OR PORT]`
+
+OR
+
+Follow `.env.example` to set up a `PORT` `ENV VAR`
