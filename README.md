@@ -110,3 +110,10 @@ Options:
 Run:
 
 `node node/18-http-client/stock.js [ticker symbol]`
+
+### [Exercise 19](https://github.com/DavidLarsKetch/nss-completed-exercise/tree/master/node/19-http-server)
+Run:
+
+`node node/19-http-server/server01.js`
+
+Broswer: `localhost:8081`
