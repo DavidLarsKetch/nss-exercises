@@ -89,7 +89,7 @@ Test:
 ### [Exercise 17](https://github.com/DavidLarsKetch/nss-completed-exercise/tree/master/node/17-tdd-bag-o-loot)
 Run:
 
-`node node/17-tdd-bag-o-loot [options]`
+`node node/17-tdd-bag-o-loot/lib/lootbag.js [options]`
 Test:
 
 `npm test`
@@ -106,3 +106,7 @@ Options:
 
 `delivered [child]`
 
+### [Exercise 18](https://github.com/DavidLarsKetch/nss-completed-exercise/tree/master/node/18-http-client)
+Run:
+
+`node node/18-http-client/stock.js [ticker symbol]`
