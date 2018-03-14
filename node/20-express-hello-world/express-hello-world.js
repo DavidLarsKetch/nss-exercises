@@ -4,7 +4,7 @@
 
 const express = require('express');
 const app = express();
-
+require('dotenv').config();
 // middleware
 const currentISOTime = (req, res, next) => {
   let d = new Date
