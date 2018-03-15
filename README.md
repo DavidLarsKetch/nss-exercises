@@ -86,6 +86,15 @@ Test:
 
 `npm test`
 
+### [Exercise 16](https://github.com/DavidLarsKetch/nss-completed-exercise/tree/master/node/16-tdd-first-steps)
+Run:
+
+`node node/16-tdd-first-steps/lib/calculator [add, subtract, multiply, divide] [numbers]`
+
+Test:
+
+`npm test`
+
 ### [Exercise 17](https://github.com/DavidLarsKetch/nss-completed-exercise/tree/master/node/17-tdd-bag-o-loot)
 Run:
 
@@ -128,3 +137,11 @@ Browser: `localhost:[8080 OR PORT]`
 OR
 
 Follow `.env.example` to set up a `PORT` `ENV VAR`
+
+### [Exercise 21](https://github.com/DavidLarsKetch/nss-completed-exercise/tree/master/node/21-express-middleware)
+Run:
+
+`[opt: PORT] node node/21-express-middleware/app.js`
+
+Browser: `localhost:[8080 or PORT]`
+`localhost:PORT/[anything with 'egg' in it]` & find an easter egg in your terminal!
