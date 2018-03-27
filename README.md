@@ -145,3 +145,6 @@ Run:
 
 Browser: `localhost:[8080 or PORT]`
 `localhost:PORT/[anything with 'egg' in it]` & find an easter egg in your terminal!
+
+### [Exercise 22](https://github.com/DavidLarsKetch/nss-completed-exercise/blob/master/node/22-chinook-erd/22-chinook-erd.pdf)
+Check out that cool ERD!
