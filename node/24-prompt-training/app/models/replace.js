@@ -8,16 +8,16 @@ module.exports.replace = ({
     course_name,
     seats,
     instructor,
-    start, 
+    start,
     end,
-    category 
+    category
   }) =>
   new Promise((resolve, reject) =>
     db.run(`REPLACE INTO Course (
-              course_id, 
+              course_id,
 	      course_name,
   	      no_of_seats,
-	      instructor_name, 
+	      instructor_name,
 	      start_date,
 	      end_date,
 	      course_category
@@ -27,12 +27,11 @@ module.exports.replace = ({
 	      ${seats},
 	      "${instructor}",
 	      "${start}",
-	      "{end}",
+	      "${end}",
 	      "${category}"
 	    )`,
-      function(err) { 
-	err ? reject(err) : resolve(this.lastID) 
+      function(err) {
+	err ? reject(err) : resolve(this.lastID)
       }
     )
   );
-
