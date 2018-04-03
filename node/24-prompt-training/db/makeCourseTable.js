@@ -9,13 +9,13 @@ module.exports.makeCourseTable = () =>
     db.serialize(() => {
       db.run('DROP TABLE IF EXISTS Course');
       db.run(`CREATE TABLE IF NOT EXISTS Course (
-  	  course_id INTEGER PRIMARY KEY,
-	  course_name TEXT,
-  	  no_of_seats INT,
-  	  instructor_name TEXT,
-  	  start_date TEXT,
-  	  end_date TEXT,
-  	  course_category TEXT
+  	        course_id INTEGER PRIMARY KEY,
+	        course_name TEXT,
+  	        no_of_seats INT,
+  	        instructor_name TEXT,
+  	        start_date TEXT,
+  	        end_date TEXT,
+  	        course_category TEXT
         )`, err => err ? reject(err) : resolve()
       );
     })
@@ -24,22 +24,22 @@ module.exports.makeCourseTable = () =>
 module.exports.insertIntoTable = ({ course_name, seats, instructor, start, end, category }) =>
   new Promise((resolve, reject) =>
     db.run(`INSERT INTO Course (
-	    course_id, 
-	    course_name,
-  	    no_of_seats,
-	    instructor_name, 
-	    start_date,
-	    end_date,
-	    course_category)
-          VALUES (
-	    null,
-	    "${course_name}",
-	    ${seats},
-	    "${instructor}",
-	    "${start}",
-	    "${end}",
-	    "${category}"
-	  )`, err => err ? reject(err) : resolve()
+	      course_id, 
+	      course_name,
+  	      no_of_seats,
+	      instructor_name, 
+	      start_date,
+	      end_date,
+	      course_category
+	    ) VALUES (
+	      null,
+	      "${course_name}",
+	      ${seats},
+	      "${instructor}",
+	      "${start}",
+	      "${end}",
+	      "${category}"
+	    )`, err => err ? reject(err) : resolve({msg: "Successful insertion in DB"})
     )
   );
 
