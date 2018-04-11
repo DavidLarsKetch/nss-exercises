@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # nss-exercises
 Exercises completed while attending the Nashville Software School (**Cohort 23, Nov 2017 - May 2018**)
 
@@ -25,6 +26,8 @@ Exercises completed while attending the Nashville Software School (**Cohort 23, 
 ### Exercise 010 - Temperature Converter
 
 ### Exercise 011 - Sonnets
+
+### Exercise 012 - Greeting Card Maker
 
 ### Challenge 004 - Remainders
 
@@ -176,3 +179,8 @@ Browser: `localhost:[8080 or PORT]`
 
 ### [Exercise 22](https://github.com/DavidLarsKetch/nss-completed-exercise/blob/master/node/22-chinook-erd/22-chinook-erd.pdf)
 Check out that cool ERD!
+=======
+# 012-greeting-card
+Exercise 012 - The Static Web - Greeting Card Maker
+# Exercise completed
+>>>>>>> sw-e-12/master
