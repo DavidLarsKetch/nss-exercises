@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # nss-exercises
 Exercises completed while attending the Nashville Software School (**Cohort 23, Nov 2017 - May 2018**)
 
@@ -24,6 +23,8 @@ Exercises completed while attending the Nashville Software School (**Cohort 23, 
 ### Exercise 009 - Counting Coins
 
 ### Exercise 010 - Temperature Converter
+
+### Exercise 011 - Sonnets
 
 ### Challenge 004 - Remainders
 
@@ -175,8 +176,3 @@ Browser: `localhost:[8080 or PORT]`
 
 ### [Exercise 22](https://github.com/DavidLarsKetch/nss-completed-exercise/blob/master/node/22-chinook-erd/22-chinook-erd.pdf)
 Check out that cool ERD!
-=======
-# 010-temperature-converter
-Exercise 010 - The Static Web - Temperature Converter
-# Exercise completed
->>>>>>> sw-e-010/master
