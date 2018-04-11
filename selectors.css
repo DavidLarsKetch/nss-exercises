@@ -1,0 +1,54 @@
+header {
+  border: 1px solid chartreuse;
+}
+header ul {
+  list-style: none;
+  display: inline-block;
+}
+
+header ul li {
+  display: inline;
+  float: left;
+  margin: 0 1rem;
+}
+
+input {
+  height: 25px;
+}
+
+.disabled {
+  color: grey;
+}
+
+.active {
+  color: yellow;
+}
+
+.grandparent > h4 {
+  border: 1px solid teal;
+  border-radius: 5px;
+}
+.parent div:nth-child(1) {
+  color: red;
+}
+
+.parent div:nth-child(1) + h4 {
+  background: red;
+}
+
+.parent div:nth-child(3) {
+  color: blue;
+}
+
+.parent div h4:last-child {
+  background: blue;
+}
+
+.promo {
+  font-weight: bold;
+  color: gold;
+}
+
+a[class="disabled"] {
+  color: purple
+}
