@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # nss-exercises
 Exercises completed while attending the Nashville Software School (**Cohort 23, Nov 2017 - May 2018**)
 
@@ -17,6 +18,8 @@ Exercises completed while attending the Nashville Software School (**Cohort 23, 
 ### Exercise 006 - Boybands
 
 ### Exercise 007 - Reindeer
+
+### Exercise 008 - Student grades
 
 ## Single Page Applications
 
@@ -162,3 +165,8 @@ Browser: `localhost:[8080 or PORT]`
 
 ### [Exercise 22](https://github.com/DavidLarsKetch/nss-completed-exercise/blob/master/node/22-chinook-erd/22-chinook-erd.pdf)
 Check out that cool ERD!
+=======
+# 009-student-grades
+Exercise 009 - The Static Web - Student grades
+# Exercise completed
+>>>>>>> sw-e-008/master
