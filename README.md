@@ -3,7 +3,10 @@ Exercises completed while attending the Nashville Software School (**Cohort 23, 
 
 # Completed Exercises
 ## The Static Web
-Exercise 001 - CSS Selectors
+### Exercise 001 - CSS Selectors
+
+### Exercise 003 - CSS Pseudo-classes
+
 ## Single Page Applications
 
 ## Modern Frameworks (Angular 1.x)

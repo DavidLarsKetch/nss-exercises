@@ -1,0 +1,14 @@
+span {
+  border: 1px solid black;
+  display: block;
+  margin: 25px;
+}
+
+.block {
+  display: inline;
+  list-style: none;
+}
+
+.n-child section:nth-of-type(2n - 1) {
+  border: 1px solid green;
+}
