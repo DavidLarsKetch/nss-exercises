@@ -37,6 +37,7 @@ Exercises completed while attending the Nashville Software School (**Cohort 23, 
 ### Challenge 008 - Happy Numbers
 
 ## Single Page Applications
+### Challenge 013 - Calculator
 
 ## Modern Frameworks (Angular 1.x)
 ### Exercises 24 & 25
