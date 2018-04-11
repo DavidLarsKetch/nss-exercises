@@ -1,0 +1,9 @@
+canvas {
+  background: #eee;
+  border: 2px solid #ccc;
+  outline: 3px solid #ddd;
+  display: block;
+  margin: 5vh auto 0 auto;
+  padding: 20px 0 0 10px;
+  color: rgb(255, 0, 0);
+}
