@@ -22,6 +22,8 @@ Exercises completed while attending the Nashville Software School (**Cohort 23, 
 
 ## Exercise 009 - Counting Coins
 
+### Challenge 004 - Remainders
+
 ## Single Page Applications
 
 ## Modern Frameworks (Angular 1.x)
