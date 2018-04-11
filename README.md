@@ -5,6 +5,8 @@ Exercises completed while attending the Nashville Software School (**Cohort 23, 
 ## The Static Web
 ### Exercise 001 - CSS Selectors
 
+### Exercise 002 - Interactive Navigation
+
 ### Exercise 003 - CSS Pseudo-classes
 
 ### Exercise 004 - The Static Web - Product Cards
