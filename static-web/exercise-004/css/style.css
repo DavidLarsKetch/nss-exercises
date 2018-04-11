@@ -1,0 +1,35 @@
+footer {
+  font-size: .75em;
+  font-style: italic;
+}
+
+h2 {
+  border: 1px dotted lightgrey;
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin: auto;
+}
+
+.availability {
+  background: darkgrey;
+  color: yellow;
+}
+
+.card {
+  border: 1px solid lightblue;
+  display: inline-block;
+  margin: 5px;
+  width: 30vw;
+}
+
+.description {
+  padding: 4px;
+  text-align: justify;
+}
+
+.soda-title {
+  margin-top: 0;
+}
