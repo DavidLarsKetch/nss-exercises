@@ -1,0 +1,13 @@
+table {
+  border: 1px solid;
+}
+
+table * {
+  border-left: 1px solid;
+  border-top: 1px solid;
+  padding: 5px;
+}
+
+tr:nth-child(odd) {
+  background: rgb(240, 240, 240);
+}

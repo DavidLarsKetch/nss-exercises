@@ -53,6 +53,8 @@ Exercises completed while attending the Nashville Software School (**Cohort 23, 
 
 ### Exercise 020 - Modules, XHRs and Callbacks, Oh My
 
+### Exercise 021 - Pet Food
+
 ## Modern Frameworks (Angular 1.x)
 ### Exercises 24 & 25
 [Mushroom Mania](https://github.com/DavidLarsKetch/nss-completed-exercise/tree/master/modern-frameworks/mushroom-mania)
