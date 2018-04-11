@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # nss-exercises
 Exercises completed while attending the Nashville Software School (**Cohort 23, Nov 2017 - May 2018**)
 
@@ -47,6 +46,10 @@ Exercises completed while attending the Nashville Software School (**Cohort 23, 
 ### Exercise 016 - Array Chaining Methods
 
 ### Exercise 018 - String Manipulation
+
+### Exercise 019 - Solar System
+
+### Exercise 020 - Modules, XHRs and Callbacks, Oh My
 
 ## Modern Frameworks (Angular 1.x)
 ### Exercises 24 & 25
@@ -190,8 +193,3 @@ Browser: `localhost:[8080 or PORT]`
 
 ### [Exercise 22](https://github.com/DavidLarsKetch/nss-completed-exercise/blob/master/node/22-chinook-erd/22-chinook-erd.pdf)
 Check out that cool ERD!
-=======
-# 019-solar-system
-Exercise 019 - Single Page Applications - Solar System
-# Exercise completed
->>>>>>> spa-e-019/master
