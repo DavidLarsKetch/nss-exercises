@@ -43,7 +43,9 @@ Exercises completed while attending the Nashville Software School (**Cohort 23, 
 
 ### Exercise 015 - Dynamic Cards
 
-### Exercise 016 - Array Chaining Methods
+### Exercise 016 - What You See is What You Get
+
+### Exercise 017 - Array Chaining Methods
 
 ### Exercise 018 - String Manipulation
 
