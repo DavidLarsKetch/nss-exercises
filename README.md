@@ -12,6 +12,8 @@ Exercises completed while attending the Nashville Software School (**Cohort 23, 
 
 ### Exercise 006 - Boybands
 
+### Exercise 007 - Reindeer
+
 ## Single Page Applications
 
 ## Modern Frameworks (Angular 1.x)
