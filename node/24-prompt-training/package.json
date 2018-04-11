@@ -1,0 +1,29 @@
+{
+  "name": "23-prompt-training",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha -R list --watch",
+    "db:generate": "node db/buildDB.js",
+    "start": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.0.5"
+  },
+  "dependencies": {
+    "cli-table": "^0.3.1",
+    "colors": "^1.2.1",
+    "moment": "^2.21.0",
+    "nodemon": "^1.17.2",
+    "prompt": "^1.0.0",
+    "sqlite3": "^4.0.0"
+  }
+}
