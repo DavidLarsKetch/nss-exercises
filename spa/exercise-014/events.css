@@ -1,0 +1,29 @@
+.blue-text {
+  color: blue;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.bold-italic {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.button-block {
+  display: block;
+  margin: 2px;
+}
+
+.hulkify {
+  font-size: 3rem;
+}
+
+.pig-border {
+  border: 3px solid black;
+}
+
+.round-border {
+  border-radius: 10px;
+}
