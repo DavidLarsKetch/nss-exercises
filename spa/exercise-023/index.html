@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sandwich Maker</title>
+    <link rel="stylesheet" href="/stylesheets/main.css">
+  </head>
+  <body>
+    <div id="container" class="container">
+      <h1>Veg Sandwiches</h1>
+      <div class="warning">
+        Hold Ctrl or Shift to select multiple options. Hold Ctrl to deselect.
+      </div>
+      <select id="bread" class="selection-menu" multiple>
+        <option value="french">French</option>
+        <option value="white">White</option>
+        <option value="rye">Rye</option>
+      </select>
+      <select id="protein" class="selection-menu" multiple>
+        <option value="tofu">Tofu</option>
+        <option value="seitan">Seitan</option>
+        <option value="tempeh">Tempeh</option>
+      </select>
+      <select id="veggies" class="selection-menu" multiple>
+        <option value="tomato">Tomato</option>
+        <option value="lettuce">Lettuce</option>
+        <option value="arugula">Arugula</option>
+        <option value="spinach">Spinach</option>
+        <option value="carrot">Carrot</option>
+      </select>
+      <select id="cheese" class="selection-menu" multiple>
+        <option value="cheddar">Cheddar</option>
+        <option value="american">American</option>
+        <option value="gouda">Gouda</option>
+        <option value="bleu">Bleu</option>
+        <option value="parmesan">Parmesan</option>
+      </select>
+      <select id="condiments" class="selection-menu" multiple>
+        <option value="mustard">Mustard</option>
+        <option value="mayo">Mayo</option>
+        <option value="sriracha">Sriracha</option>
+        <option value="pesto">Pesto</option>
+      </select>
+      <button id="total" type="button" name="button">Total</button>
+      <div id="output" class="output">
+
+      </div>
+    </div>
+    <script src="dist/bundle.js" charset="utf-8"></script>
+  </body>
+</html>

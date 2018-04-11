@@ -57,6 +57,8 @@ Exercises completed while attending the Nashville Software School (**Cohort 23, 
 
 ### Exercise 022 - Seasonal Sales
 
+### Exercise 023 - Sandwich Maker
+
 ## Modern Frameworks (Angular 1.x)
 ### Exercises 24 & 25
 [Mushroom Mania](https://github.com/DavidLarsKetch/nss-completed-exercise/tree/master/modern-frameworks/mushroom-mania)
