@@ -1,0 +1,6 @@
+nav
+  if path !== '/'
+    a.navLink(href='/') home
+  each p in paths
+    if !path.match(p)
+      a.navLink(href=`/${p}`) #{p}      

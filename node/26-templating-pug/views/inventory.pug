@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h3 On offer today:
+  if pastries
+    ul
+      each pastry in pastries
+        li #{pastry.name}: $#{pastry.price} each
+  else
+    p We're all sold out!
