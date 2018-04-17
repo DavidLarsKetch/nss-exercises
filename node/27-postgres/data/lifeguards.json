@@ -1,0 +1,39 @@
+{
+	"lifeguards": [
+		{
+			"first_name": "Ken",
+			"last_name": "Gruesome",
+			"gender": "male",
+			"hotness_index": 2,
+			"beach_id": 2
+		},
+		{
+			"first_name": "David",
+			"last_name": "Hasselhoff",
+			"gender": "male",
+			"hotness_index": 8,
+			"beach_id": 1
+		},
+		{
+			"first_name": "Elizabeth",
+			"last_name": "Coolio",
+			"gender": "female",
+			"hotness_index": 6,
+			"beach_id": 4
+		},
+		{
+			"first_name": "Grace",
+			"last_name": "McArthur",
+			"gender": "female",
+			"hotness_index": 10,
+			"beach_id": 4
+		},
+		{
+			"first_name": "Guy",
+			"last_name": "Man",
+			"gender": "female",
+			"hotness_index": 4,
+			"beach_id": 2
+		}
+	]
+}

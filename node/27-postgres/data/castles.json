@@ -1,0 +1,34 @@
+{
+	"castles": [
+		{
+			"name": "The Keep",
+			"rating": 8,
+			"beach_id": 3
+		},
+		{
+			"name": "At Least Jimmy Tried",
+			"rating": 3,
+			"beach_id": 2
+		},
+		{
+			"name": "Crystal Palace",
+			"rating": 9,
+			"beach_id": 1
+		},
+		{
+			"name": "Hapsburgs Last Resort",
+			"rating": 6,
+			"beach_id": 4
+		},
+		{
+			"name": "The Citadel",
+			"rating": 7,
+			"beach_id": 2
+		},
+		{
+			"name": "Sloppy Slopes",
+			"rating": 2,
+			"beach_id": 1
+		}
+	]
+}

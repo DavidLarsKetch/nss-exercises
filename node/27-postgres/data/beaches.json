@@ -1,0 +1,24 @@
+{
+	"beaches": [
+		{
+			"name": "Koopa Koopa Beach",
+			"location": "Mario World",
+			"sand_rating": 2
+		},
+		{
+			"name": "Black Sand Beach",
+			"location": "Bermuda",
+			"sand_rating": 10 
+		},
+		{
+			"name": "Lazy Shores",
+			"location": "Naperville, Illinois",
+			"sand_rating": 1
+		},
+		{
+			"name": "Private Cove",
+			"location": "Tillamook, Oregon",
+			"sand_rating": 8
+		}
+	]
+}
