@@ -21,8 +21,9 @@ class Company(object):
         return self.name
     def get_address(self):
         return self.address
-    #def get_employees(self):
-    #    return self.employees
+    def list_employees_names(self):
+        {print(e.get_name()) for e in self.employees}
+
 
 if __name__ == '__main__':
     Bangazon = Company('Bangazon', '123 Main St')
@@ -32,4 +33,4 @@ if __name__ == '__main__':
     Bangazon.employees.add(mary)
     Bangazon.employees.add(david)
     Bangazon.employees.add(stephen)
-    print(employee for employee in Bangazon.employees)
+    Bangazon.list_employees_names()
